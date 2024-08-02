@@ -1,0 +1,33 @@
+# Default initial positions for DRC_HUBO's ros2_control fake system
+
+initial_positions:
+  LEB: 0
+  LHAND_a1: 0
+  LHAND_a2: 0
+  LHAND_a3: 0
+  LHAND_b1: 0
+  LHAND_b2: 0
+  LHAND_b3: 0
+  LHAND_c1: 0
+  LHAND_c2: 0
+  LHAND_c3: 0
+  LSP: 0
+  LSR: 0
+  LSY: 0
+  LWP: 0
+  LWY: 0
+  REB: 0
+  RHAND_a1: 0
+  RHAND_a2: 0
+  RHAND_a3: 0
+  RHAND_b1: 0
+  RHAND_b2: 0
+  RHAND_b3: 0
+  RHAND_c1: 0
+  RHAND_c2: 0
+  RHAND_c3: 0
+  RSP: 0
+  RSR: 0
+  RSY: 0
+  RWP: 0
+  RWY: 0

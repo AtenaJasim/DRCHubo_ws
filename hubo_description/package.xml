@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>hubo_description</name>
+  <version>2.35.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="atenajasim@gmail.com">csrobot</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>xacro</build_depend>
+  <depend>rclcpp</depend>
+  <depend>std_messages</depend>
+ <!--- <test_depend>ament_lint_auto</test_depend> -->
+ <!--- <test_depend>ament_lint_common</test_depend> -->
+  
+  <!-- <depend>trajectory_messages</depend> -->
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros                                                                 
+        gazebo_plugin_path="${prefix}/lib"
+        gazebo_model_path="${prefix}/.." />
+        <gazebo_ros gazebo_model_path = "/home/csrobot/hubo_ws/src/hubo_description/urdf/hubo_and_gripper_copy.urdf"/>
+  </export>
+</package>

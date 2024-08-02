@@ -1,0 +1,86 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    left_gripper_control:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    right_gripper_control:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+left_arm_controller:
+  ros__parameters:
+    joints:
+      - LSP
+      - LSR
+      - LSY
+      - LEB
+      - LWY
+      - LWP
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - RSP
+      - RSR
+      - RSY
+      - REB
+      - RWY
+      - RWP
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+left_gripper_control:
+  ros__parameters:
+    joints:
+      - LHAND_a1
+      - LHAND_a2
+      - LHAND_a3
+      - LHAND_b1
+      - LHAND_b2
+      - LHAND_b3
+      - LHAND_c1
+      - LHAND_c2
+      - LHAND_c3
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+right_gripper_control:
+  ros__parameters:
+    joints:
+      - RHAND_a1
+      - RHAND_a2
+      - RHAND_a3
+      - RHAND_b1
+      - RHAND_b2
+      - RHAND_b3
+      - RHAND_c1
+      - RHAND_c2
+      - RHAND_c3
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

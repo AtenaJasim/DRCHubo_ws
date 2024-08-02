@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: hubo_description
+    relative_path: urdf/hubo_and_gripper.urdf
+  srdf:
+    relative_path: config/DRC_HUBO.srdf
+  package_settings:
+    author_name: Atena Jasim
+    author_email: atenajasim@gmail.com
+    generated_timestamp: 1722539223
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

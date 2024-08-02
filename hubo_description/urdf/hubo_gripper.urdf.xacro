@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<robot name="robotiq_3f_gripper" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!--Loaded the robot-->
+    <xacro:include filename="$(find hubo_description)/urdf/Full_body_moveit.urdf" />
+<!--Loaded the right gripper-->
+    <xacro:include filename="$(find hubo_description)/urdf/hubo_right_gripper.urdf" />
+<!--Loaded the left gripper-->
+    <xacro:include filename="$(find hubo_description)/urdf/hubo_left_gripper.urdf" />
+
+<!--left wrist to left gripper-->
+    <joint name="LWFT" type="fixed">
+        <parent link="Body_LWP"/>
+        <child link="Body_LF1"/>
+    </joint>
+
+    <!--right wrist to right gripper-->
+    <joint name="RWFT" type="fixed">
+       <parent link="Body_RWP"/>
+       <child link="Body_RF1"/>
+    </joint>
+</robot>

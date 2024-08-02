@@ -1,0 +1,160 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+
+# For beginners, we downscale velocity and acceleration limits.
+# You can always specify higher scaling factors (<= 1.0) in your motion requests.  # Increase the values below to 1.0 to always move at maximum speed.
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+joint_limits:
+  LEB:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_a1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_a2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_a3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_b1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_b2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_b3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_c1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_c2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LHAND_c3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LSP:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LSR:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LSY:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LWP:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  LWY:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  REB:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_a1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_a2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_a3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_b1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_b2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_b3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_c1:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_c2:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RHAND_c3:
+    has_velocity_limits: true
+    max_velocity: 100.0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RSP:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RSR:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RSY:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RWP:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  RWY:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
